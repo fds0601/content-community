@@ -21,7 +21,7 @@
 - **文章管理**：发布、编辑、删除、分页列表、分类筛选
 - **互动功能**：点赞（防重复）、评论
 - **Redis 缓存**：文章详情缓存，10 分钟过期，更新/删除时主动失效
-- **工程化**：全局异常处理、参数校验、统一返回体、Knife4j 接口文档
+- **工程化**：全局异常处理、参数校验、统一返回体、Swagger 接口文档
 
 ## 快速启动
 
@@ -86,7 +86,7 @@ Header: Authorization: Bearer <token>
 src/main/java/com/example/community/
 ├── CommunityApplication.java    # 启动类
 ├── common/                      # 统一返回体、全局异常
-├── config/                      # Security、MyBatisPlus、Knife4j、JWT过滤器
+├── config/                      # Security、MyBatisPlus、OpenAPI、JWT过滤器
 ├── controller/                  # 接口层
 ├── service/                     # 业务层
 ├── mapper/                      # 数据访问层

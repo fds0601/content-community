@@ -10,7 +10,7 @@
 | 持久层 | MyBatis-Plus 3.5 / MySQL 8 |
 | 缓存 | Redis (Lettuce) |
 | 认证 | JWT (jjwt 0.12) |
-| 接口文档 | Knife4j (OpenAPI3) |
+| 接口文档 | SpringDoc OpenAPI (Swagger UI) |
 | 构建 | Maven |
 | JDK | 21+ |
 
@@ -44,7 +44,7 @@ mvn spring-boot:run
 ```
 
 ### 5. 访问接口文档
-打开浏览器访问：http://localhost:8080/doc.html
+打开浏览器访问：http://localhost:8080/swagger-ui.html
 
 ## 接口示例
 

@@ -11,7 +11,7 @@ public class CommunityApplication {
         SpringApplication.run(CommunityApplication.class, args);
         System.out.println("=====================================");
         System.out.println("  内容社区后端启动成功！");
-        System.out.println("  接口文档: http://localhost:8080/doc.html");
+        System.out.println("  接口文档: http://localhost:8080/swagger-ui.html");
         System.out.println("=====================================");
     }
 }

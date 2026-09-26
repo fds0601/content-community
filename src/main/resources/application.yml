@@ -38,8 +38,3 @@ jwt:
   # 生产环境请替换为足够长的随机字符串
   secret: ZGV2LWxvY2F0aW9uLWp3dC1zZWNyZXQta2V5LWZvci1jb21tdW5pdHktcG9ydGZvbA==
   expiration: 86400000
-
-knife4j:
-  enable: true
-  setting:
-    language: zh_cn

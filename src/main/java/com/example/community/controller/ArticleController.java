@@ -3,6 +3,7 @@ package com.example.community.controller;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.community.common.Result;
 import com.example.community.dto.ArticleDTO;
+import com.example.community.dto.CommentDTO;
 import com.example.community.entity.Article;
 import com.example.community.service.ArticleService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -66,8 +67,8 @@ public class ArticleController {
 
     @Operation(summary = "发表评论")
     @PostMapping("/{id}/comment")
-    public Result<Void> comment(@PathVariable Long id, @RequestBody Map<String, String> body) {
-        articleService.comment(id, body.get("content"));
+    public Result<Void> comment(@PathVariable Long id, @RequestBody CommentDTO dto) {
+        articleService.comment(id, dto);
         return Result.success();
     }
 }

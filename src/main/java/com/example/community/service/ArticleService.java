@@ -11,11 +11,13 @@ import com.example.community.mapper.ArticleLikeMapper;
 import com.example.community.mapper.ArticleMapper;
 import com.example.community.mapper.CommentMapper;
 import com.example.community.util.UserContext;
+import com.example.community.dto.CommentDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
+
 
 import java.time.Duration;
 import java.util.HashMap;
@@ -148,11 +150,11 @@ public class ArticleService {
         return "点赞成功";
     }
 
-    public void comment(Long id, String content) {
+    public void comment(Long id, CommentDTO dto) {
         Comment comment = new Comment();
         comment.setArticleId(id);
         comment.setUserId(UserContext.getUserId());
-        comment.setContent(content);
+        comment.setContent(dto.getContent());
         commentMapper.insert(comment);
     }
 }

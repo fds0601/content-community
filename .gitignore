@@ -22,4 +22,4 @@ Thumbs.db
 logs/
 
 ### Env ###
-application-local.yml
+src/main/resources/application-local.yml
